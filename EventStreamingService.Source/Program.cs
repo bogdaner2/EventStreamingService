@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
 using Confluent.Kafka;
+using EventStreamingService.Core.Domain;
 using EventStreamingService.Core.Messaging;
 using Newtonsoft.Json;
 
@@ -15,14 +16,7 @@ namespace EventStreamingService.Source
         {
             Execute();
         }
-
-        public class Event
-        {
-            public Guid Id { get; set; }
-            public string Type { get; set; }
-            public string Value { get; set; }
-        }
-
+        
         private static void Execute()
         {
 
@@ -38,11 +32,13 @@ namespace EventStreamingService.Source
 
                     timer = new Timer((state) =>
                         {
-                            var model = new Event
+                            var model = new FootballEvent
                             {
                                 Id = guid,
                                 Type = "Card",
-                                Value = "Red Card"
+                                HomeTeam = "New",
+                                AwayTeam = "Old",
+                                Time = DateTime.Now
                             };
                             producer.SendMessage(JsonConvert.SerializeObject(model));
                             timer.Change(random.Next(1000, 3000), Timeout.Infinite);

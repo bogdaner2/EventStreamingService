@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStreamingService.Bus",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStreamingService.Core", "EventStreamingService.Core\EventStreamingService.Core.csproj", "{26F0BD81-8B9E-46AC-BEAE-17D48AFF3D8A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStreamingService.SubscribeApi", "EventStreamingService.SubscribeApi\EventStreamingService.SubscribeApi.csproj", "{31E4C08E-8F4B-4E15-8974-57A7DE7DCACC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{26F0BD81-8B9E-46AC-BEAE-17D48AFF3D8A}.Release|x64.Build.0 = Release|Any CPU
 		{26F0BD81-8B9E-46AC-BEAE-17D48AFF3D8A}.Release|x86.ActiveCfg = Release|Any CPU
 		{26F0BD81-8B9E-46AC-BEAE-17D48AFF3D8A}.Release|x86.Build.0 = Release|Any CPU
+		{31E4C08E-8F4B-4E15-8974-57A7DE7DCACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E4C08E-8F4B-4E15-8974-57A7DE7DCACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E4C08E-8F4B-4E15-8974-57A7DE7DCACC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{31E4C08E-8F4B-4E15-8974-57A7DE7DCACC}.Debug|x64.Build.0 = Debug|Any CPU
+		{31E4C08E-8F4B-4E15-8974-57A7DE7DCACC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{31E4C08E-8F4B-4E15-8974-57A7DE7DCACC}.Debug|x86.Build.0 = Debug|Any CPU
+		{31E4C08E-8F4B-4E15-8974-57A7DE7DCACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E4C08E-8F4B-4E15-8974-57A7DE7DCACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E4C08E-8F4B-4E15-8974-57A7DE7DCACC}.Release|x64.ActiveCfg = Release|Any CPU
+		{31E4C08E-8F4B-4E15-8974-57A7DE7DCACC}.Release|x64.Build.0 = Release|Any CPU
+		{31E4C08E-8F4B-4E15-8974-57A7DE7DCACC}.Release|x86.ActiveCfg = Release|Any CPU
+		{31E4C08E-8F4B-4E15-8974-57A7DE7DCACC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
