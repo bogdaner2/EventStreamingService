@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./redis:/var/lib/redis
+    environment:
+      - REDIS_PASSWORD=redispassword
+    restart: always
+  cassandra:
+    container_name: cassandra
+    image: cassandra
+    ports:
+      - "9042:9042"
+    environment:
+        - "MAX_HEAP_SIZE=256M"
+        - "HEAP_NEWSIZE=128M"
+    restart: always
+    volumes:
+      - ./cassandra:/var/lib/cassandr
