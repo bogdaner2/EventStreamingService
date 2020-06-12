@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EventStreamingService.Core\EventStreamingService.Core.csproj" />
+    <ProjectReference Include="..\EventStreamingService.DAL\EventStreamingService.DAL.csproj" />
   </ItemGroup>
 
 </Project>
